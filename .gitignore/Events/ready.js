@@ -81,7 +81,7 @@ module.exports = async(client) => {
     var tps = new Date(Date.now())
     const demarrage = new Discord.RichEmbed()
         .setColor("#21008b")
-        .setTitle("<:obscuriaemoji:594894622484987905> **Le bot a été lancé __avec succès__**")
+        .setTitle("**Le bot a été lancé __avec succès__**")
         .setDescription(`à ${tps.toString()}`)
-    client.guilds.get("592376709697896456").channels.get("594142073712672769").send(demarrage);
+    client.guilds.get("448508951324000257").channels.get("593721815017193474").send(demarrage);
 };
