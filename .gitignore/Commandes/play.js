@@ -7,10 +7,9 @@ module.exports.run = (client, message, args) => {
     else {message.channel.send(`Erreur : playlist *"${args[1]}"* inconnue`);}
     if (bon) {
     
-    message.channel.send(`Je lance la playlist *"${args[1]}"* length : ${musiques.length}`);
-	for (let i = 0; i < musiques.length; i++) {
-  		message.channel.send(`-play ${playlist[i]}`);
-	}
+	message.channel.send(`Je lance la playlist *"${args[1]}"* length : ${musiques.length}`);
+	var i = 0;
+	while (i < musiques.length) {message.channel.send(`-play`); i++}
     }
 };
 
