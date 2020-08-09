@@ -5,8 +5,7 @@ module.exports = async(client) => {
 
     client.user.setPresence({
         game: {
-            name : "Obscuria en maintenance environ jusqu'au 27/08"
-            //name : `Obscuria en cours de développement sur ${client.guilds.size} serveur(s)`
+            name : "Matthias aime bien les patates"
         }
     })
     let db = new sqlite3.Database('data.db');
