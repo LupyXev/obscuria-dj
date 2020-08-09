@@ -5,7 +5,7 @@ module.exports.run = (client, message, args) => {
     var musiques = [];
     if(args[1] == "test") {var musiques = ["j'aime les patates"];}
     else {message.channel.send(`Erreur : playlist *"${args[1]}"* inconnue`);}
-    if (var musiques =! []) {
+    if (musiques =! []) {
 	for (let i = 0; i < playlist.lenght; i++) {
   		message.channel.send(`-play ${playlist[i]}`);
 	}
