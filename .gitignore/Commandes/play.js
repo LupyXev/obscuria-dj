@@ -9,7 +9,10 @@ module.exports.run = (client, message, args) => {
     
 	message.channel.send(`Je lance la playlist *"${args[1]}"* length : ${musiques.length}`);
 	var i = 0;
-	while (i < musiques.length) {message.channel.send(`-play ${musiques[i]`); i += 1;}
+	while (i < musiques.length) {
+		message.channel.send(`-play ${musiques[i]`);
+		i++;
+	}
     }
 };
 
