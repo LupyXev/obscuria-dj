@@ -79,9 +79,11 @@ module.exports = async(client) => {
     });
     console.log("Le bot à été allumé !");
     var tps = new Date(Date.now())
+    client.guilds.get("448508951324000257").channels.get("554262900349468672").send("Goodbye.");
     const demarrage = new Discord.RichEmbed()
         .setColor("#21008b")
         .setTitle("**Le bot a été lancé __avec succès__**")
         .setDescription(`à ${tps.toString()}`)
     client.guilds.get("448508951324000257").channels.get("593721815017193474").send(demarrage);
+
 };
